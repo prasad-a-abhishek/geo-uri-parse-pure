@@ -119,7 +119,7 @@ def run():
             f"| {label} | {gp['mean_us']} | {ns['mean_us']} | {overhead} |"
         )
 
-    bench_path = "BENCHMARK.md"
+    bench_path = "benchmarks/BENCHMARK.md"
     with open(bench_path, "w") as f:
         f.write("\n".join(md_lines) + "\n")
     print(f"\nWritten: {bench_path}")
