@@ -1,0 +1,1 @@
+{"id":"F-001","severity":"Low","surface":"parse_geo_uri()","attack_class":"A3","description":"1MB URI accepted without RFC 5870 §4.3 length guard — no crash, no OOM, not a security issue","reproducer_file":"findings/F-001/minimized_input","stack_file":"findings/F-001/stack.txt","status":"OPEN"}

@@ -1,0 +1,20 @@
+Finding F-001: No Crash / No Stack Trace
+=========================================
+This is NOT a crash finding. There is no exception, segfault, or uncaught
+error. The 1,000,008-byte URI is parsed successfully without OOM or crash.
+
+Finding F-001 (Low, A3) documents that RFC 5870 §4.3's suggested length
+limit ("a few hundred characters") is not enforced. The input does not
+trigger any exception — it is accepted and parsed to a valid GeoURI.
+
+Root cause: _parser.py ABNF pattern has no length constraint on pvalue
+([^;]*). Python's regex engine processes the 1MB string in O(n) linear
+time without catastrophic backtracking or memory exhaustion.
+
+Proof of no-crash (run with PYTHONPATH=src):
+  python3 findings/F-001/generate_input.py
+
+Expected output:
+  Input length: 1000008 bytes
+  Parsed successfully — no crash, no OOM
+  Result: lat=1.0, lon=2.0, params=['aaaaaaaaaa...' (truncated)]

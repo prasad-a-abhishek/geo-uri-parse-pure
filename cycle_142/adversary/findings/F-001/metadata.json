@@ -1,0 +1,12 @@
+{
+  "id": "F-001",
+  "severity": "Low",
+  "surface": "parse_geo_uri()",
+  "attack_class": "A3",
+  "first_seen": "T1_VULN_AUDIT",
+  "iters_to_reproduce": "N/A - not a crash",
+  "t3_corpus_iters": 652160669,
+  "t3_crashes_found": 0,
+  "minimization_method": "N/A - non-crash finding",
+  "note": "Low-severity RFC robustness gap, not a security vulnerability"
+}
