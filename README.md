@@ -16,7 +16,7 @@
 ## Quick Start
 
 ```bash
-pip install geo-uri-parse-pure
+pip install git+https://github.com/prasad-a-abhishek/geo-uri-parse-pure.git
 ```
 
 ```python
@@ -118,6 +118,8 @@ def parse_geo_uri(uri: str | None) -> GeoURI:
 | `crs` | `str` | Coordinate reference system label (default `"wgs84"`) |
 | `uncertainty` | `float \| None` | Uncertainty in metres (the `;u=` parameter) |
 | `params` | `dict[str, str]` | Extra `;key=value` parameters (excluding crs and u) |
+
+**Version:** 0.1.0
 
 **CLI:**
 

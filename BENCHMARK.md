@@ -7,13 +7,13 @@
 | Workload | geo-uri-parse-pure (mean µs) | naive-split (mean µs) | Overhead |
 
 |----------|---------------------------|----------------------|----------|
-| basic_2d | 10.0 | 2.2 | 4.5× |
-| basic_3d | 10.3 | 2.6 | 4.0× |
-| negative_coords | 9.0 | 2.2 | 4.1× |
-| wgs84_alt | 8.9 | 2.2 | 4.0× |
-| crs_param | 72.0 | 1.9 | 37.9× |
-| uncertainty | 11.1 | 1.8 | 6.2× |
-| full_params | 26.2 | 3.7 | 7.1× |
-| param_disorder | 22.4 | 2.5 | 9.0× |
-| zero_coords | 6.5 | 1.3 | 5.0× |
-| edge_bounds | 13.8 | 2.4 | 5.8× |
+| basic_2d | 14.4 | 2.7 | 5.3× |
+| basic_3d | 12.5 | 3.2 | 3.9× |
+| negative_coords | 11.0 | 2.6 | 4.2× |
+| wgs84_alt | 10.8 | 2.6 | 4.2× |
+| crs_param | 88.2 | 2.4 | 36.8× |
+| uncertainty | 13.5 | 2.1 | 6.4× |
+| full_params | 32.0 | 4.5 | 7.1× |
+| param_disorder | 27.4 | 3.0 | 9.1× |
+| zero_coords | 8.0 | 1.6 | 5.0× |
+| edge_bounds | 16.8 | 2.9 | 5.8× |
