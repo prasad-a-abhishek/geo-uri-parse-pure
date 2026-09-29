@@ -1,0 +1,28 @@
+INFO: Using built-in libfuzzer
+WARNING: Failed to find function "__sanitizer_acquire_crash_state".
+WARNING: Failed to find function "__sanitizer_print_stack_trace".
+WARNING: Failed to find function "__sanitizer_set_death_callback".
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 1663443924
+INFO:       22 files found in corpus/fuzz_parse
+INFO: seed corpus: files: 22 min: 1b max: 30b total: 272b rss: 40Mb
+#23	INITED cov: 2 ft: 2 corp: 1/1b exec/s: 0 rss: 40Mb
+#2097152	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 1048576 rss: 40Mb
+#4194304	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 838860 rss: 40Mb
+#8388608	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 838860 rss: 40Mb
+#16777216	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 838860 rss: 40Mb
+#33554432	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 838860 rss: 40Mb
+#67108864	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 818400 rss: 40Mb
+#134217728	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 808540 rss: 40Mb
+==93065== libFuzzer: run interrupted; exiting
+stat::number_of_executed_units: 236049047
+stat::average_exec_per_sec:     789461
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              40
+==93065== libFuzzer: run interrupted; exiting
+stat::number_of_executed_units: 236049047
+stat::average_exec_per_sec:     789461
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              40

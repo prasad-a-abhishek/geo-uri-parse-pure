@@ -1,0 +1,31 @@
+{
+  "total_iters": 652160669,
+  "total_crashes": 0,
+  "total_oracle_mismatches": 0,
+  "per_surface": {
+    "fuzz_geo_uri_attrs": {
+      "iters": 228075424,
+      "crashes": 0,
+      "oracle_mismatches": 0,
+      "exit_code": 0
+    },
+    "fuzz_dispatch": {
+      "iters": 186338453,
+      "crashes": 0,
+      "oracle_mismatches": 0,
+      "exit_code": 0
+    },
+    "fuzz_cli_parse": {
+      "iters": 1697745,
+      "crashes": 0,
+      "oracle_mismatches": 0,
+      "exit_code": 0
+    },
+    "fuzz_parse": {
+      "iters": 236049047,
+      "crashes": 0,
+      "oracle_mismatches": 0,
+      "exit_code": 0
+    }
+  }
+}

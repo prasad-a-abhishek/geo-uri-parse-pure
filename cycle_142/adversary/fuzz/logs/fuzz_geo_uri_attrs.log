@@ -1,0 +1,34 @@
+INFO: Using built-in libfuzzer
+WARNING: Failed to find function "__sanitizer_acquire_crash_state".
+WARNING: Failed to find function "__sanitizer_print_stack_trace".
+WARNING: Failed to find function "__sanitizer_set_death_callback".
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 1069462269
+INFO:       12 files found in corpus/fuzz_geo_uri_attrs
+INFO: seed corpus: files: 12 min: 8b max: 31b total: 189b rss: 40Mb
+#13	INITED cov: 2 ft: 2 corp: 1/8b exec/s: 0 rss: 40Mb
+#16	REDUCE cov: 2 ft: 2 corp: 1/7b lim: 8 exec/s: 0 rss: 40Mb L: 7/7 MS: 3 ChangeByte-ShuffleBytes-EraseBytes-
+#18	REDUCE cov: 2 ft: 2 corp: 1/5b lim: 8 exec/s: 0 rss: 40Mb L: 5/5 MS: 2 ChangeByte-EraseBytes-
+#19	REDUCE cov: 2 ft: 2 corp: 1/4b lim: 8 exec/s: 0 rss: 40Mb L: 4/4 MS: 1 EraseBytes-
+#45	REDUCE cov: 2 ft: 2 corp: 1/3b lim: 8 exec/s: 0 rss: 40Mb L: 3/3 MS: 1 EraseBytes-
+#61	REDUCE cov: 2 ft: 2 corp: 1/2b lim: 8 exec/s: 0 rss: 40Mb L: 2/2 MS: 1 EraseBytes-
+#67	REDUCE cov: 2 ft: 2 corp: 1/1b lim: 8 exec/s: 0 rss: 40Mb L: 1/1 MS: 1 EraseBytes-
+#2097152	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 1048576 rss: 40Mb
+#4194304	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 838860 rss: 40Mb
+#8388608	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 762600 rss: 40Mb
+#16777216	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 762600 rss: 40Mb
+#33554432	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 762600 rss: 40Mb
+#67108864	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 762600 rss: 40Mb
+#134217728	pulse  cov: 2 ft: 2 corp: 1/1b lim: 4096 exec/s: 762600 rss: 40Mb
+==93369== libFuzzer: run interrupted; exiting
+stat::number_of_executed_units: 228075424
+stat::average_exec_per_sec:     762794
+stat::new_units_added:          6
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              40
+==93369== libFuzzer: run interrupted; exiting
+stat::number_of_executed_units: 228075424
+stat::average_exec_per_sec:     762794
+stat::new_units_added:          6
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              40
